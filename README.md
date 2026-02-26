@@ -1,12 +1,17 @@
 # Generalized Neural Operators
 Welcome! In this repo, I play around with Neural Operators in attempt to make them better at learning PDE solution maps. 
+
 During my PhD, I often used orthogonal series expansions. 
 I worked with wavelets---same idea as Fourier modes, but the amplitude of the wavelets is not constant over its domain, so it can capture localized information. 
-I also worked with resolvent modes---special modes extracted from partial differential expansions that represent the most energetically amplified structures in a system under the effect of perturbations.
+I also worked with resolvent modes---special modes extracted from linearized partial differential equations that represent the most energetically amplified structures in the linearized system due to the effect of perturbations.
+
 Resolvent modes are interesting because they encode physical conservation laws (conservation of mass, momentum).
 Fourier Neural Operators interpolate input data smoothly using Fourier modes, but I argue that other functions could be better at representing the data, either by capturing localized phenomena more efficiently (wavelets) or representing structures that are preferentially selected by the natural dynamics of the system (resolvent modes). The hope is that using these functions to transform the input data would help with the generalizability of the neural operator.
 
-First, a guide to the different files contained here:
+I haven't yet implemented Neural Operators for eigenmodes or resolvent modes, but you can find naive implementations of Neural Operators which conserve mass in a brute force way (```conserveMass``` layer after the nonlinear activation layers), and a naive implementation of a wavelet-based Neural Operator. I use "naive" to indicate that the implementation developed by Caltech researchers is more sophisticated and supports mixed-resolution inputs and parallelization; I implemented everything from scratch as an exercise.
+
+---
+A guide to the different files contained here:
 ## SCRIPTS
 - NO.py: general script that combines different types of neural operators
 
