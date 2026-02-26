@@ -2,7 +2,7 @@
 Welcome! In this repo, I play around with Neural Operators in attempt to make them better at learning PDE solution maps. 
 
 During my PhD, I often used orthogonal series expansions. 
-I worked with wavelets---same idea as Fourier modes, but the amplitude of the wavelets is not constant over its domain, so it can capture localized information. 
+I worked with wavelets---same idea as Fourier modes, but the amplitudes of the wavelets are not constant over their domain, so they can capture localized information. 
 I also worked with resolvent modes---special modes extracted from linearized partial differential equations that represent the most energetically amplified structures in the linearized system due to the effect of perturbations.
 
 Resolvent modes are interesting because they encode physical conservation laws (conservation of mass, momentum).
