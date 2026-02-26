@@ -1,5 +1,0 @@
-TODOs:
-- write more efficiently (i.e. use smaller tensors instead of zeroing out current ones)
-- test on 2D Burger's equation (see neuralop file. there's a burger's solver)
-- learn to use neuraloperator package
-- introduce a model in KS solver (learn 'small scales') (d(u2)/dx? residual?)
